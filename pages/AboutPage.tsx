@@ -49,12 +49,12 @@ const AboutPage: React.FC = () => {
   const [selectedCert, setSelectedCert] = useState<Certification | null>(null);
 
   const cubeImages = [
-      'https://picsum.photos/seed/avatar/200/200',   // front (original avatar)
-      'https://picsum.photos/seed/project1/200/200', // back
-      'https://picsum.photos/seed/project2/200/200', // right
-      'https://picsum.photos/seed/project3/200/200', // left
-      'https://picsum.photos/seed/project4/200/200', // top
-      'https://picsum.photos/seed/cert1/200/200',    // bottom
+      '/images/20250306_195149.jpg',   // front (original avatar)
+      '/images/IMG_9465.jpg', // back
+      '/images/IMG_9464.jpg', // right
+      '/images/20250308_152247.jpg', // left
+      '/images/DSCF6611.jpg', // top
+      '/images/DSCF4170.jpg',    // bottom
   ];
 
   const handleCardClick = (index: number) => {
