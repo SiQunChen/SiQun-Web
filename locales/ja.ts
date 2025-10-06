@@ -133,7 +133,7 @@ export const translations: TranslationData = {
         name: '丙級ハードウェア修理技術士',
         issuer: '労働部労働力発展署',
         date: '2020年9月',
-        imageUrl: '/images/硬體裝修丙級.png',
+        imageUrl: '/images/硬體裝修丙級.jpg',
         verifyUrl: '#',
       },
     ],

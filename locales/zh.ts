@@ -133,7 +133,7 @@ export const translations: TranslationData = {
         name: '丙級硬體裝修技術士',
         issuer: '勞動部勞動力發展署',
         date: '2020年9月',
-        imageUrl: '/images/硬體裝修丙級.png',
+        imageUrl: '/images/硬體裝修丙級.jpg',
         verifyUrl: '#',
       },
     ],

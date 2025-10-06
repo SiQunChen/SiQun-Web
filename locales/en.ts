@@ -133,7 +133,7 @@ export const translations: TranslationData = {
         name: 'Class C Hardware Repair Technician',
         issuer: 'Workforce Development Agency, Ministry of Labor',
         date: 'Sep 2020',
-        imageUrl: '/images/硬體裝修丙級.png',
+        imageUrl: '/images/硬體裝修丙級.jpg',
         verifyUrl: '#',
       },
     ],
