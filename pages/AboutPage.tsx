@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { useTranslations } from '../contexts/LanguageContext';
 import SectionHeader from '../components/SectionHeader';
@@ -160,11 +158,11 @@ const AboutPage: React.FC = () => {
 
       {selectedCert && (
         <Modal isOpen={!!selectedCert} onClose={closeModal}>
-            <div className="p-4 sm:p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
-                <div className="w-full aspect-[16/9] rounded-lg overflow-hidden border-2 border-slate-700 shadow-lg bg-slate-900 flex items-center justify-center">
+            <div className="p-4 sm:p-6 md:p-8 flex flex-col gap-6 items-center text-center">
+                <div className="w-full max-h-[60vh] mb-4">
                     <img src={selectedCert.imageUrl} alt={selectedCert.name} className="w-full h-full object-contain" />
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-2">
                     <h2 className="text-2xl font-bold text-slate-100">{selectedCert.name}</h2>
                     <p className="text-lg text-cyan-400">{selectedCert.issuer}</p>
                     <p className="text-sm text-slate-500">{selectedCert.date}</p>
@@ -175,7 +173,7 @@ const AboutPage: React.FC = () => {
                             href={selectedCert.verifyUrl} 
                             target="_blank" 
                             rel="noopener noreferrer" 
-                            className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-6 py-3 rounded-md text-base font-medium hover:from-cyan-600 hover:to-blue-600 transition-all transform hover:scale-105 shadow-lg shadow-cyan-500/20"
+                            className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-6 py-3 rounded-md text-base font-medium hover:from-cyan-600 hover:to-blue-600 transition-all transform hover:scale-105 shadow-lg shadow-cyan-500/20 mt-4"
                         >
                             <span>Verify Credential</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
