@@ -158,10 +158,12 @@ const AboutPage: React.FC = () => {
 
       {selectedCert && (
         <Modal isOpen={!!selectedCert} onClose={closeModal}>
-            <div className="p-4 sm:p-6 md:p-8 flex flex-col gap-6 items-center text-center">
-                <div className="w-full max-h-[60vh] mb-4">
-                    <img src={selectedCert.imageUrl} alt={selectedCert.name} className="w-full h-full object-contain" />
-                </div>
+            <div className="p-4 sm:p-6 flex flex-col items-center text-center">
+                <img 
+                    src={selectedCert.imageUrl} 
+                    alt={selectedCert.name} 
+                    className="w-auto h-auto max-w-full max-h-[65vh] object-contain mb-6" 
+                />
                 <div className="space-y-2">
                     <h2 className="text-2xl font-bold text-slate-100">{selectedCert.name}</h2>
                     <p className="text-lg text-cyan-400">{selectedCert.issuer}</p>
