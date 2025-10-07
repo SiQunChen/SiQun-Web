@@ -600,7 +600,7 @@
           border-radius: 0.75rem;
           box-shadow: 0 0 50px rgba(34, 211, 238, 0.2);
           width: 90vw;
-          max-width: 900px;
+          max-width: 800px;
           max-height: 90vh;
           overflow-y: auto;
           opacity: 0;
@@ -626,6 +626,28 @@
 
       body.no-scroll {
           overflow: hidden;
+      }
+
+      /* Contact Card */
+      .contact-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+        background-color: rgba(30, 41, 59, 0.5); /* bg-slate-800/50 */
+        backdrop-filter: blur(4px);
+        border: 1px solid #334155; /* border-slate-700 */
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+        min-height: 180px; /* 給予卡片一個最小高度 */
+      }
+      .contact-card:hover {
+        border-color: #22d3ee; /* cyan-400 */
+        box-shadow: 0 0 25px rgba(34, 211, 238, 0.2);
+        transform: translateY(-5px);
+        background-color: rgba(30, 41, 59, 0.8);
       }
 
     </style>
