@@ -1,10 +1,10 @@
-
 import React, { useRef, useState } from 'react';
 import { Project } from '../types';
 import { useTranslations } from '../contexts/LanguageContext';
 
 interface ProjectCardProps {
   project: Project;
+  onImageClick: () => void;
 }
 
 const GitHubIcon = () => (
@@ -15,7 +15,7 @@ const ExternalLinkIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 );
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ project, onImageClick }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [style, setStyle] = useState<React.CSSProperties>({});
   const t = useTranslations();
@@ -43,7 +43,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       className="rounded-lg overflow-hidden flex flex-col project-card-hover h-full"
       data-interactive
     >
-      <img className="h-48 w-full object-cover" src={project.imageUrl} alt={project.title} />
+      <div onClick={onImageClick} className="cursor-pointer">
+        <img className="h-48 w-full object-cover" src={project.imageUrl} alt={project.title} />
+      </div>
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold text-slate-100 mb-2">{project.title}</h3>
         <p className="text-slate-400 text-sm mb-4 flex-grow">{project.description}</p>
