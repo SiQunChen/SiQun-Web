@@ -14,7 +14,7 @@ export const translations: TranslationData = {
     ],
     languages: [
       { name: '中国語 (ネイティブ)', proficiency: 'native' },
-      { name: '台湾語', proficiency: 'intermediate' },
+      { name: '台湾語', proficiency: 'fluent' },
       { name: '英語', proficiency: 'intermediate' },
       { name: '日本語', proficiency: 'beginner' },
     ],

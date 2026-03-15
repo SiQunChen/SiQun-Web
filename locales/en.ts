@@ -14,7 +14,7 @@ export const translations: TranslationData = {
     ],
     languages: [
       { name: 'Mandarin (Native)', proficiency: 'native' },
-      { name: 'Taiwanese Hokkien', proficiency: 'intermediate' },
+      { name: 'Taiwanese Hokkien', proficiency: 'fluent' },
       { name: 'English', proficiency: 'intermediate' },
       { name: 'Japanese', proficiency: 'beginner' },
     ],
