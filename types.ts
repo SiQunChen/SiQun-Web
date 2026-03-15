@@ -1,7 +1,13 @@
 
 export interface Skill {
   name: string;
-  level: number; // Percentage from 0 to 100
+}
+
+export type LanguageProficiency = 'native' | 'fluent' | 'intermediate' | 'beginner';
+
+export interface Language {
+  name: string;
+  proficiency: LanguageProficiency;
 }
 
 export interface Project {
@@ -28,10 +34,10 @@ export interface CadreExperience {
 }
 
 export interface Education {
-    degree: string;
-    institution: string;
-    period: string;
-    description:string;
+  degree: string;
+  institution: string;
+  period: string;
+  description: string;
 }
 
 export interface Certification {
@@ -47,7 +53,7 @@ export interface PortfolioData {
   tagline: string;
   bio: string[];
   skills: Skill[];
-  languages: Skill[];
+  languages: Language[];
   projects: Project[];
   experience: Experience[];
   education: Education[];
@@ -72,55 +78,55 @@ export interface Navigation {
 }
 
 export interface Buttons {
-    downloadCV: string;
-    viewWork: string;
-    getInTouch: string;
-    sendMessage: string;
-    goHome: string;
-    downloadFullResume: string;
+  downloadCV: string;
+  viewWork: string;
+  getInTouch: string;
+  sendMessage: string;
+  goHome: string;
+  downloadFullResume: string;
 }
 
 export interface Sections {
-    about: { title: string; };
-    interests: { title: string; };
-    honors: { title: string; };
-    certifications: { title: string; };
-    skills: { title: string; subtitle: string; techSkills: string; languages: string; };
-    resume: { title: string; subtitle: string; workExperience: string; education: string; cadreExperience: string; };
-    projects: { title: string; subtitle: string; };
-    contact: { 
-        title: string; 
-        subtitle: string;
-        form: { 
-            name: string; 
-            email: string; 
-            message: string; 
-            status: {
-                sending: string;
-                success: (name: string) => string;
-                error: string;
-            }
-        },
-        contactInfo: string;
-        contactInfoText: string;
-        instagramProfile: string;
-        lineProfile: string;
-        githubProfile: string;
-    };
+  about: { title: string; };
+  interests: { title: string; };
+  honors: { title: string; };
+  certifications: { title: string; };
+  skills: { title: string; subtitle: string; techSkills: string; languages: string; proficiencyLabels: { native: string; fluent: string; intermediate: string; beginner: string; }; };
+  resume: { title: string; subtitle: string; workExperience: string; education: string; cadreExperience: string; };
+  projects: { title: string; subtitle: string; };
+  contact: {
+    title: string;
+    subtitle: string;
+    form: {
+      name: string;
+      email: string;
+      message: string;
+      status: {
+        sending: string;
+        success: (name: string) => string;
+        error: string;
+      }
+    },
+    contactInfo: string;
+    contactInfoText: string;
+    instagramProfile: string;
+    lineProfile: string;
+    githubProfile: string;
+  };
 }
 
 export interface NotFound {
-    title: string;
-    subtitle: string;
+  title: string;
+  subtitle: string;
 }
 
 export interface Footer {
-    rights: string;
+  rights: string;
 }
 
 export interface ProjectCard {
-    code: string;
-    liveDemo: string;
+  code: string;
+  liveDemo: string;
 }
 
 // Main translation data structure
