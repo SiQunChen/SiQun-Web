@@ -27,6 +27,13 @@ export const translations: TranslationData = {
         liveUrl: 'https://ntuchiller.site/auth/login',
       },
       {
+        title: 'HERO',
+        description: 'A digital household disaster preparedness supply management system supporting OCR scanning, expiry tracking and expiration alerts, with automatic calculation of supply gaps based on Taiwan\'s official civil defense recommendations.',
+        tags: ['Flask', 'Jinja2', 'SQLite', 'OCR'],
+        imageUrl: '/images/hero.png',
+        githubUrl: 'https://github.com/SiQunChen/HERO'
+      },
+      {
         title: 'Gan Woo Ya (Movie Finder)',
         description: 'An aggregated real-time movie information platform covering large, medium, and small cinemas, allowing you to compare showtimes, distances, and prices at a glance to quickly find the movie you want.',
         tags: ['Python', 'React', 'TypeScript', 'Vite', 'Tailwind CSS'],

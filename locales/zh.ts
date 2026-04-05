@@ -27,6 +27,13 @@ export const translations: TranslationData = {
         liveUrl: 'https://ntuchiller.site/auth/login',
       },
       {
+        title: 'HERO',
+        description: '數位化家庭防災物資管理系統，支援 OCR 掃描辨識、效期追蹤與到期提醒，並依台灣官方民防建議自動計算物資缺口。',
+        tags: ['Flask', 'Jinja2', 'SQLite', 'OCR'],
+        imageUrl: '/images/hero.png',
+        githubUrl: 'https://github.com/SiQunChen/HERO'
+      },
+      {
         title: '甘有影',
         description: '一個整合大、中、小型電影院的即時資訊，讓你能夠一次比較各家影院的場次、距離與價格，並快速找到想看的電影。',
         tags: ['Python', 'React', 'TypeScript', 'Vite', 'Tailwind CSS'],

@@ -27,6 +27,13 @@ export const translations: TranslationData = {
         liveUrl: 'https://ntuchiller.site/auth/login',
       },
       {
+        title: 'HERO',
+        description: 'デジタル家庭防災物資管理システム。OCRスキャンによる認識、有効期限の追跡と期限切れ通知をサポートし、台湾公式の民間防衛推奨に基づいて物資の不足を自動計算します。',
+        tags: ['Flask', 'Jinja2', 'SQLite', 'OCR'],
+        imageUrl: '/images/hero.png',
+        githubUrl: 'https://github.com/SiQunChen/HERO'
+      },
+      {
         title: '甘有影（映画検索アプリ）',
         description: '大・中・小規模の映画館のリアルタイム情報を統合し、上映時間・距離・価格を一括比較して、見たい映画をすばやく見つけられるアプリケーション。',
         tags: ['Python', 'React', 'TypeScript', 'Vite', 'Tailwind CSS'],
